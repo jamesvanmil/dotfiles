@@ -1,0 +1,14 @@
+[user]
+	email = james.vanmil@gmail.com
+	name = James Van Mil
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+	editor = mvim -f
+	excludesfile = ~/.gitignore_global
+[push]
+	default = simple
+[alias]
+	co = checkout
