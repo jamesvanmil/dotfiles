@@ -5,3 +5,4 @@ cp ~/.bash_profile .bash_profile
 cp ~/.vimrc .vimrc
 cp ~/.gitconfig .gitconfig
 cp ~/.gitignore_global .gitignore_global
+cp ~/.aspell.en.pws .aspell.en.pws
