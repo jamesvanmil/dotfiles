@@ -1,5 +1,7 @@
 # .bashrc
 
+set -o vi
+
 # User specific aliases and functions
 
 export EDITOR=vim
@@ -8,8 +10,6 @@ alias ls='ls -l -G'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-alias gn='geeknote'
 
 alias ctags="`brew --prefix`/bin/ctags"
 
@@ -30,3 +30,5 @@ NO_COLOR="\[\033[0m\]"
 PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 source ~/.git-completion.bash
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

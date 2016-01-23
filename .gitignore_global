@@ -4,4 +4,10 @@
 .DS_Store
 .idea
 .secret
+.bundle/*
 tags
+.tags
+#*
+.swn
+.swo
+dump.rdb

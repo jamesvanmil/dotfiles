@@ -6,9 +6,13 @@
   status = auto
   branch = auto
 [core]
-	editor = mvim -f
+	editor = vim
 	excludesfile = ~/.gitignore_global
 [push]
 	default = simple
 [alias]
 	co = checkout
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

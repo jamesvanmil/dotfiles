@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/bin
+PATH=~/utilities/fits:$PATH
 
 export PATH
 
