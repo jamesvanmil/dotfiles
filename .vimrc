@@ -16,7 +16,7 @@ set shiftwidth=2
 set autochdir
 set tags=tags;/
 let macvim_skip_colorscheme = 1
-colorscheme vividchalk
+colorscheme alduin
 
 " airline stuff
 let g:airline#extensions#tabline#enabled = 1
@@ -43,9 +43,12 @@ let mapleader = "\<Space>"
 " jk to throw you into normal mode from insert mode
 inoremap jk <esc>
 
-" \jk to switch buffers
+" leader jk to switch buffers
 noremap <Leader>j :bn<CR>
 noremap <Leader>k :bp<CR>
+
+" leader x to close buffers
+noremap <Leader>x :bd<CR>
 
 nmap <silent> <Up> :wincmd k<CR>
 nmap <silent> <Down> :wincmd j<CR>
