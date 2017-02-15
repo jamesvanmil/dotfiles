@@ -240,3 +240,5 @@ call s:HL( 'SpellBad', 'Windhelm', '', 'undercurl' )
 "call s:HL( 'SpellCap', '', '', '' )
 "call s:HL( 'SpellLocal', '', '', '' )
 "call s:HL( 'SpellRare', '', '', '' )
+call s:HL( 'Special', 'Windhelm', '', 'none' )
+

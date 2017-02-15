@@ -11,3 +11,5 @@ tags
 .swn
 .swo
 dump.rdb
+.byebug_history
+coverage/*

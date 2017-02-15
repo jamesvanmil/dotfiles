@@ -6,12 +6,14 @@ set -o vi
 
 export EDITOR=vim
 
-alias ls='ls -l -G'
+alias ll='ls -l -G'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
 alias ctags="`brew --prefix`/bin/ctags"
+
+alias mux='tmuxinator'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -27,8 +29,8 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
  
-PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
+PS1="$GREEN\u@\h$NO_COLOR:\W$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
-source ~/.git-completion.bash
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+function bgrep { 
+  ag "$@" $(bundle show --paths) . 
+} 

@@ -5,10 +5,20 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
+# bash-completion
+if [ -f `brew --prefix`/etc/bash_completion  ]; then
+      . `brew --prefix`/etc/bash_completion
+fi
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # User specific environment and startup programs
 
-PATH=~/utilities/fits:$PATH
+PATH=~$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-export PATH
+# export PATH
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH="/usr/local/sbin:$PATH"
+export PATH=":/usr/local/bin:$PATH" # Add homebrew to PATH

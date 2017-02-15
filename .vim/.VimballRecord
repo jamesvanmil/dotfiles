@@ -1,3 +1,0 @@
-markdown-1.2.2.vba: call delete('/Users/vanmiljf/.vim/ftdetect/markdown.vim')|call delete('/Users/vanmiljf/.vim/snippets/markdown.snippets')|call delete('/Users/vanmiljf/.vim/syntax/markdown.vim')
-xmledit-1.9.1.vba: call delete('/Users/vanmiljf/.vim/ftplugin/xml.vim')|call delete('/Users/vanmiljf/.vim/doc/xml-plugin.txt')
-netrw.vba: call delete('/Users/vanmiljf/.vim/plugin/netrwPlugin.vim')|call delete('/Users/vanmiljf/.vim/autoload/netrw.vim')|call delete('/Users/vanmiljf/.vim/autoload/netrwFileHandlers.vim')|call delete('/Users/vanmiljf/.vim/autoload/netrwSettings.vim')|call delete('/Users/vanmiljf/.vim/doc/pi_netrw.txt')|call delete('/Users/vanmiljf/.vim/syntax/netrw.vim')|call delete('/Users/vanmiljf/.vim/autoload/netrw_gitignore.vim')
