@@ -11,8 +11,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-alias ctags="`brew --prefix`/bin/ctags"
-
 alias mux='tmuxinator'
 
 # Source global definitions
