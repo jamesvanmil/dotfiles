@@ -3,6 +3,7 @@
 cp ~/.bashrc .bashrc
 cp ~/.bash_profile .bash_profile
 cp ~/.bash_osx .bash_osx
+cp ~/.inputrc .inputrc
 cp ~/.vimrc .vimrc
 cp ~/.gvimrc .gvimrc
 cp ~/.gitconfig .gitconfig

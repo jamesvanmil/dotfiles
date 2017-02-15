@@ -4,6 +4,7 @@ cp .bashrc ~/.bashrc
 cp .bash_profile ~/.bash_profile
 cp .bash_osx ~/.bash_osx
 cp .vimrc ~/.vimrc
+cp .inputrc ~/.inputrc
 cp .gvimrc ~/.gvimrc
 cp .gitconfig ~/.gitconfig
 cp .gitignore_global ~/.gitignore_global
