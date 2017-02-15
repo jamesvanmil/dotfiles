@@ -6,8 +6,8 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # load OS X configs
-usernamestring = `uname`
-if [ $usernamestring == 'Darwin' ]; then
+usernamestring=`uname`
+if [ '$usernamestring' == 'Darwin' ]; then
   . ~/.bash_osx
 fi
 
