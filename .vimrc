@@ -45,7 +45,6 @@ filetype plugin indent on
 set number
 set relativenumber
 set wrap
-set breakindent
 set showbreak=\ \ 
 set linebreak
 set tabstop=2
