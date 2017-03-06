@@ -1,21 +1,21 @@
 # ~/.tmuxinator/curate.yml
 
 name: curate
-root: ~/development/curate
+root: ~/curate
 windows:
   - editor:
       layout: main-horizontal
       panes:
-        - vim
-        - bundle exec rake jetty:start
+        - rvm use 2.1.6@curate && vim
+        - rvm use 2.1.6@curate && bundle exec rake jetty:start
   - server-stuff:
-      root: ~/development/curate/spec/internal
+      root: ~/curate/spec/internal
       layout: tiled
       panes:
         - redis-server
-        - rails c
-        - rails s
-        - RAILS_ENV=development QUEUE=* VERBOSE=1 bundle exec rake resque:work
+        - rvm use 2.1.6@curate && rails c
+        - rvm use 2.1.6@curate && rm -f /tmp/minter-state && rails s
+        - rvm use 2.1.6@curate && RAILS_ENV=development QUEUE=* VERBOSE=1 bundle exec rake resque:work
 
 
 # Optional tmux socket

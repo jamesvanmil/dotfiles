@@ -1,7 +1,7 @@
 # ~/.tmuxinator/curate.yml
 
-name: scholar
-root: ~/development/scholar_uc
+name: scholar2
+root: ~/scholar2
 windows:
   - editor:
       layout: main-horizontal

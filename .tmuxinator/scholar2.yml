@@ -1,7 +1,21 @@
-# ~/.tmuxinator/sufia.yml
+# ~/.tmuxinator/curate.yml
 
-name: sufia
-root: ~/sufia
+name: scholar2
+root: ~/scholar2
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - rvm use 2.1.6 && vim
+        - rvm use 2.1.6 && bundle exec rake jetty:start
+  - server-stuff:
+      layout: tiled
+      panes:
+        - redis-server
+        - rvm use 2.1.6 && rails c
+        - rvm use 2.1.6 && rails s
+        - rvm use 2.1.6 && RAILS_ENV=development QUEUE=* VERBOSE=1 bundle exec rake resque:work
+
 
 # Optional tmux socket
 # socket_name: foo
@@ -25,18 +39,5 @@ root: ~/sufia
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t sufia
+# post: tmux -CC attach -t curate
 
-windows:
-  - editor:
-      layout: main-horizontal
-      panes:
-        - vim
-        - #
-  - server: 
-      layout: tiled
-      panes: 
-        - bundle exec rails s
-        - solr_wrapper -d solr/config/ --collection_name hydra-development
-        - "fcrepo_wrapper -p 8984"
-  - logs: tail -f log/development.log

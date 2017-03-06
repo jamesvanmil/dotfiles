@@ -1,0 +1,17 @@
+# ~/.tmuxinator/sufia-app.yml
+
+name: scholar3
+root: ~/scholar3
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - rvm use 2.3.3@scholar && vim
+        - rvm use 2.3.3@scholar 
+  - server: 
+      layout: tiled
+      panes:
+        - rvm use 2.3.3@scholar && bundle exec rails server -b 0.0.0.0
+        - rvm use 2.3.3@scholar && solr_wrapper -d solr/config/ --collection_name hydra-development
+        - rvm use 2.3.3@scholar && fcrepo_wrapper -p 8984
+        - redis-server
