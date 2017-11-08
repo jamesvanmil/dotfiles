@@ -15,7 +15,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-endwise'
@@ -24,6 +23,7 @@ Plugin 'IN3D/vim-raml'
 Plugin 'unblevable/quick-scope'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'thoughtbot/vim-rspec'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -88,6 +88,9 @@ noremap <Leader>x :bd<CR>
 
 " leader space to write
 noremap <Leader><Space> :w<CR>
+
+" leader o to open the file
+nnoremap <leader>o :!open %<Enter><Enter>
 
 nmap <silent> <Up> :wincmd k<CR>
 nmap <silent> <Down> :wincmd j<CR>
